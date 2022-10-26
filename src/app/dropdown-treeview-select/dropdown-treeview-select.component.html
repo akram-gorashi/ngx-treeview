@@ -27,7 +27,10 @@
   <div *ngIf="config.hasAllCheckBox || config.hasCollapseExpand" class="row">
     <div class="col-12">
       <label *ngIf="config.hasAllCheckBox" (click)="select(item)">
-        <strong>{{ i18n.getAllCheckboxText() }}</strong>
+        <strong>{{ i18n.getAll
+          
+          
+          CheckboxText() }}</strong>
       </label>
       <label *ngIf="config.hasCollapseExpand" class="float-right" (click)="onCollapseExpand()">
         <i [title]="i18n.getTooltipCollapseExpandText(item.collapsed)" aria-hidden="true" [ngSwitch]="item.collapsed">
